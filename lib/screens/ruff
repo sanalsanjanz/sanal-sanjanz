@@ -1,0 +1,52 @@
+SafeArea(
+        child: Expanded(
+          child: Column(
+//Slider
+            children: [
+              const Flexible(flex: 2, child: Carousel()),
+              Div,
+
+//MainPage
+
+              Container(
+                child: MainPage(),
+              ),
+
+//About
+
+
+
+
+              Flexible(
+                fit: FlexFit.loose,
+                child: Container(
+                  color: Colors.black,
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
+
+
+
+
+       /* appBar: AppBar(
+        actions: [
+          IconButton(
+              onPressed: () {
+                signOuts(context);
+              },
+              icon: const Icon(Icons.exit_to_app_rounded))
+        ],
+        title: Text(
+            "Welcome ${loggedInUser.firstName} ${loggedInUser.secondName}     "),
+        centerTitle: true,
+      ), */
+
+       /*  Future<void> signOut(BuildContext context) async {
+    await FirebaseAuth.instance.signOut();
+    Navigator.of(context).pushAndRemoveUntil(
+        MaterialPageRoute(builder: (context) => const LoginScreen()),
+        (route) => false);
+  } */
